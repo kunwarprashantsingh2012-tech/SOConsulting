@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Industrial Capacity Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Global Industrial Capacity Dashboard</h1>
+<canvas id="cementChart"></canvas>
+<script>
+new Chart(document.getElementById("cementChart"),{
+type:"bar",
+data:{
+labels:["Asia","Europe","North America","Middle East","Africa"],
+datasets:[{label:"Cement Capacity (Mt)",data:[2800,450,320,260,180]}]
+}
+});
+</script>
+</body>
+</html>

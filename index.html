@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S.O. Consulting Pvt Ltd | Strategic Intelligence</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body{margin:0;font-family:Inter;color:#1a1a1a;background:white}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #eee}
+nav a{margin-left:22px;text-decoration:none;color:#333;font-weight:500}
+.hero{padding:160px 8%;background:linear-gradient(120deg,#0A3D91,#2F80ED);color:white}
+.hero h1{font-family:Montserrat;font-size:64px;max-width:900px}
+.hero p{font-size:22px;max-width:700px;margin-top:20px}
+.section{padding:100px 8%}
+.section h2{font-family:Montserrat;font-size:42px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px}
+.card{padding:35px;border:1px solid #eee;border-radius:12px;background:white}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px}
+.stat{font-size:48px;font-family:Montserrat;color:#0A3D91;font-weight:700}
+.chart{max-width:800px;margin-top:40px}
+footer{background:#f5f7fa;padding:50px 8%}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.svg" height="40">
+<nav>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="cement-plants.html">Cement Plants</a>
+<a href="insights.html">Insights</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Strategic Intelligence for Global Industrial Markets</h1>
+<p>S.O. Consulting provides strategy consulting and market intelligence across building materials, glass manufacturing, dairy ingredients and industrial supply chains.</p>
+</section>
+
+<section class="section">
+<h2>Consulting Services</h2>
+<div class="grid">
+<div class="card"><h3>Market Intelligence</h3><p>Industry analysis, demand forecasting and global market sizing.</p></div>
+<div class="card"><h3>Strategy Advisory</h3><p>Corporate strategy, market entry and growth planning.</p></div>
+<div class="card"><h3>Commercial Due Diligence</h3><p>Investment analysis for private equity and strategic investors.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Industries</h2>
+<div class="grid">
+<div class="card"><h3>Cement & Building Materials</h3><p>Global cement demand and capacity outlook.</p></div>
+<div class="card"><h3>Glass Manufacturing</h3><p>Industrial production and supply chain analysis.</p></div>
+<div class="card"><h3>Dairy Ingredients</h3><p>Dry milk powder production and trade flows.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Global Cement Demand Index</h2>
+<div class="chart"><canvas id="chart"></canvas></div>
+</section>
+
+<footer>© 2026 S.O. Consulting Pvt Ltd</footer>
+
+<script>
+new Chart(document.getElementById("chart"),{
+type:"line",
+data:{
+labels:["2020","2021","2022","2023","2024","2025"],
+datasets:[{label:"Global Cement Demand Index",data:[100,104,109,107,112,118],borderColor:"#0A3D91"}]
+}
+})
+</script>
+
+</body>
+</html>

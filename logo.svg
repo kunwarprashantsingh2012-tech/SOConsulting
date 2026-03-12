@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="120">
+<style>
+.so{font-family:Arial;font-size:52px;font-weight:700;fill:#0A3D91}
+.cons{font-family:Arial;font-size:28px;font-weight:600;fill:#333}
+</style>
+<text x="10" y="60" class="so">S.O.</text>
+<text x="10" y="100" class="cons">CONSULTING</text>
+</svg>
